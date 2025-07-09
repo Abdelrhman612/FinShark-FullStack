@@ -286,3 +286,4 @@ D:\Projects\FinShark\api\obj\Debug\net8.0\scopedcss\bundle\finshark.styles.css
 D:\Projects\FinShark\api\obj\Debug\net8.0\finshark.csproj.Up2Date
 D:\Projects\FinShark\api\obj\Debug\net8.0\finshark.genruntimeconfig.cache
 D:\Projects\FinShark\api\obj\Debug\net8.0\ref\finshark.dll
+D:\Projects\FinShark\api\obj\Debug\net8.0\finshark.sourcelink.json
