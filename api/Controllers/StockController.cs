@@ -28,7 +28,8 @@ namespace FinShark.Controllers
         {
             return await _service.GetStocks();
         }
-        [HttpGet("{id:int}")]
+        [HttpGet]
+        [Route("{id:int}")]
         public async Task<IActionResult> GetStock([FromRoute] int id)
         {
             return await _service.GetStock(id);
@@ -37,6 +38,18 @@ namespace FinShark.Controllers
         public async Task<IActionResult> AddStock([FromBody] CreateStockDto createStockDto)
         {
             return await _service.AddStock(createStockDto);
+        }
+        [HttpPut]
+        [Route("{id:int}")]
+        public async Task<IActionResult> UpdateStock([FromRoute] int id, [FromBody] UpdateStockDto updateStockDto)
+        {
+            return await _service.UpdateStock(id, updateStockDto);
+        }
+        [HttpDelete]
+        [Route("{id:int}")]
+        public async Task<IActionResult> DeleteStock([FromRoute] int id)
+        {
+            return await _service.DeleteStock(id);
         }
 
 
